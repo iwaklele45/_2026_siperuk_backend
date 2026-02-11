@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_2026_siperuk_backend", "_2026_siperuk_backend.csproj", "{810482A6-0260-FD9B-D86F-8D525FB1DE66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{810482A6-0260-FD9B-D86F-8D525FB1DE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810482A6-0260-FD9B-D86F-8D525FB1DE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810482A6-0260-FD9B-D86F-8D525FB1DE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810482A6-0260-FD9B-D86F-8D525FB1DE66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {311BFB60-7A7E-4066-8967-A2A99A009D5F}
+	EndGlobalSection
+EndGlobal
