@@ -398,6 +398,9 @@ FodyWeavers.xsd
 # Windows Installer files from build outputs
 *.cab
 *.msi
+
+# Docs text notes
+docs
 *.msix
 *.msm
 *.msp
@@ -480,3 +483,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Ignore docs folder
+docs/
