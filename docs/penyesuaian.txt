@@ -1,6 +1,0 @@
-Assalamualaikum, 
-Selamat Siang semua berkaitan dengan *Task Detail* pada file Git terdapat penyesuaikan sebagai berikut:
-6. *Buat Migration dan Data Seeding Modul* : Buat struktur basis data menggunakan Entity Framework Core Migration berdasarkan entitas utama (misalnya `Customer` ). Tambahkan `DbSet` pada `DbContext` , jalankan migration, dan siapkan data awal (data seeding) menggunakan `ModelBuilder` atau mekanisme inisialisasi data lainnya.
-7. *Buat Entity, DTO, dan Controller CRUD*: Buat Entity Class, Data Transfer Object (DTO) untuk request dan response, serta Controller berbasis ASP.NET Core untuk mengimplementasikan modul CRUD. Struktur kode harus mengikuti prinsip separation of concerns dan mudah dipelihara.
-
-Terima kasih
