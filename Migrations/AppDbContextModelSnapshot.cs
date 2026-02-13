@@ -210,7 +210,7 @@ namespace _2026_siperuk_backend.Migrations
                             Email = "admin@spark.test",
                             FullName = "Administrator Kampus",
                             PasswordHash = "240BE518FABD2724DDB6F04EEB1DA5967448D7E831C08C8FA822809F74C720A9",
-                            Role = "Admin"
+                            Role = "admin"
                         },
                         new
                         {
@@ -218,7 +218,7 @@ namespace _2026_siperuk_backend.Migrations
                             Email = "staff@spark.test",
                             FullName = "Staff Akademik",
                             PasswordHash = "10176E7B7B24D317ACFCF8D2064CFD2F24E154F7B5A96603077D5EF813D6A6B6",
-                            Role = "Staff"
+                            Role = "staff"
                         });
                 });
 

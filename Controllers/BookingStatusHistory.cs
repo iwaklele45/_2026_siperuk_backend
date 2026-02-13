@@ -25,6 +25,15 @@ public class BookingStatusHistoryController : ControllerBase
             .AsNoTracking()
             .Include(h => h.BookingStatus)
             .OrderByDescending(h => h.ChangedAt)
+            .Select(h => new
+            {
+                h.Id,
+                h.BookingId,
+                h.BookingStatusId,
+                BookingStatusName = h.BookingStatus != null ? h.BookingStatus.Name : string.Empty,
+                h.ChangedAt,
+                h.Notes
+            })
             .ToListAsync();
 
         return Ok(histories);
@@ -44,6 +53,15 @@ public class BookingStatusHistoryController : ControllerBase
             .Where(h => h.BookingId == bookingId)
             .Include(h => h.BookingStatus)
             .OrderByDescending(h => h.ChangedAt)
+            .Select(h => new
+            {
+                h.Id,
+                h.BookingId,
+                h.BookingStatusId,
+                BookingStatusName = h.BookingStatus != null ? h.BookingStatus.Name : string.Empty,
+                h.ChangedAt,
+                h.Notes
+            })
             .ToListAsync();
 
         return Ok(histories);

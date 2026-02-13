@@ -16,7 +16,7 @@ public static class ModelBuilderSeedUsers
                 Id = 1,
                 FullName = "Administrator Kampus",
                 Email = "admin@spark.test",
-                Role = "Admin",
+                Role = "admin",
                 PasswordHash = passwordService.Hash("admin123")
             },
             new User
@@ -24,7 +24,7 @@ public static class ModelBuilderSeedUsers
                 Id = 2,
                 FullName = "Staff Akademik",
                 Email = "staff@spark.test",
-                Role = "Staff",
+                Role = "staff",
                 PasswordHash = passwordService.Hash("staff123")
             }
         );

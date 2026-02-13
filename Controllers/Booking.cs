@@ -74,6 +74,8 @@ public class BookingController : ControllerBase
         };
 
         _context.Bookings.Add(booking);
+        await _context.SaveChangesAsync();
+
         _context.BookingStatusHistories.Add(new BookingStatusHistory
         {
             BookingId = booking.Id,
