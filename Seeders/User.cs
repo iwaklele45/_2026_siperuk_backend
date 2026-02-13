@@ -15,7 +15,7 @@ public static class ModelBuilderSeedUsers
             {
                 Id = 1,
                 FullName = "Administrator Kampus",
-                Email = "admin@spark.test",
+                Email = "admin@gmail.com",
                 Role = "admin",
                 PasswordHash = passwordService.Hash("admin123")
             },
@@ -23,7 +23,7 @@ public static class ModelBuilderSeedUsers
             {
                 Id = 2,
                 FullName = "Staff Akademik",
-                Email = "staff@spark.test",
+                Email = "staff@gmail.com",
                 Role = "staff",
                 PasswordHash = passwordService.Hash("staff123")
             }
