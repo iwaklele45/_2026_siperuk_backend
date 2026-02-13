@@ -59,8 +59,8 @@ public class AppDbContext : DbContext
             .OnDelete(DeleteBehavior.Restrict);
 
         // Seed initial users and booking statuses
-        // ModelBuilderSeedUsers.SeedData(modelBuilder);
-        // ModelBuilderSeedStatus.SeedData(modelBuilder);
+        ModelBuilderSeedUsers.SeedData(modelBuilder);
+        ModelBuilderSeedStatus.SeedData(modelBuilder);
 
     }
 }
