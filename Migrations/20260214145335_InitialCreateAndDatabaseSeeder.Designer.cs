@@ -12,8 +12,8 @@ using _2026_spark_backend.Data;
 namespace _2026_siperuk_backend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260213134025_UserSeeder")]
-    partial class UserSeeder
+    [Migration("20260214145335_InitialCreateAndDatabaseSeeder")]
+    partial class InitialCreateAndDatabaseSeeder
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

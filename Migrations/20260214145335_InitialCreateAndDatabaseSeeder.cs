@@ -4,10 +4,12 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace _2026_siperuk_backend.Migrations
 {
     /// <inheritdoc />
-    public partial class InitalCreate : Migration
+    public partial class InitialCreateAndDatabaseSeeder : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -120,6 +122,26 @@ namespace _2026_siperuk_backend.Migrations
                         principalTable: "Bookings",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "BookingStatuses",
+                columns: new[] { "Id", "Description", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Booking sedang menunggu antrian", "Waiting" },
+                    { 2, "Booking sudah disetujui", "Approved" },
+                    { 3, "Booking ditolah", "Rejected" },
+                    { 4, "Booking telah selesai", "Finish" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "Email", "FullName", "PasswordHash", "Role" },
+                values: new object[,]
+                {
+                    { 1, "admin@gmail.com", "Administrator Kampus", "240BE518FABD2724DDB6F04EEB1DA5967448D7E831C08C8FA822809F74C720A9", "admin" },
+                    { 2, "staff@gmail.com", "Staff Akademik", "10176E7B7B24D317ACFCF8D2064CFD2F24E154F7B5A96603077D5EF813D6A6B6", "staff" }
                 });
 
             migrationBuilder.CreateIndex(
