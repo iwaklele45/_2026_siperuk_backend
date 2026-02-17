@@ -26,7 +26,7 @@ public static class ModelBuilderSeedStatus
             {
                 Id = 3,
                 Name = "Rejected",
-                Description = "Booking ditolah"
+                Description = "Booking ditolak"
             }, new BookingStatus
             {
                 Id = 4,
