@@ -15,19 +15,20 @@ API backend untuk sistem peminjaman ruangan kampus (SIPERUK) berbasis ASP.NET Co
 
 ## Konfigurasi
 - Atur connection string di `appsettings.json` atau `appsettings.Development.json`:
-  - `Host=localhost; Database=siperuk_db; Username=rafiputra; Password=`
+  - `Host=localhost; Database=siperuk_db; Username=localhost; Password=password`
 - JWT di `appsettings.json` key `Jwt`: `Key`, `Issuer`, `Audience`, `ExpirationMinutes`.
 
 ## Setup & menjalankan
 1. Restore depedensi: `dotnet restore`
 2. Update database (jalankan migrasi): `dotnet ef database update`
-3. Jalankan server:
-   - `ASPNETCORE_URLS=http://localhost:5000 dotnet run`
-   - Swagger tersedia di `http://localhost:5000/swagger`
+3. Jalankan server dalam mode Development (memakai `appsettings.Development.json`):
+  - macOS/Linux: `ASPNETCORE_ENVIRONMENT=Development ASPNETCORE_URLS=http://localhost:5000 dotnet watch run`
+  - Windows PowerShell: `$Env:ASPNETCORE_ENVIRONMENT="Development"; $Env:ASPNETCORE_URLS="http://localhost:5000"; dotnet watch run`
+  - Swagger tersedia di `http://localhost:5000/swagger`
 
 ## Akun seed
-- Admin: `admin@spark.test` / password `admin123`
-- Staff: `staff@spark.test` / password `staff123`
+- Admin: `admin@gmail.test` / password `admin123`
+- Staff: `staff@gmail.test` / password `staff123`
 
 ## Migrasi database
 - Tambah migrasi baru: `dotnet ef migrations add <NamaMigrasi>`
@@ -43,3 +44,6 @@ API backend untuk sistem peminjaman ruangan kampus (SIPERUK) berbasis ASP.NET Co
 ## Catatan
 - HTTPS dimatikan untuk kemudahan lokal; aktifkan kembali untuk produksi.
 - Ubah `Password` pada connection string sesuai kredensial PostgreSQL Anda.
+
+## Lisensi
+Internal use. Sesuaikan sebelum publikasi.
